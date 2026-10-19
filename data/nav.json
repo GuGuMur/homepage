@@ -1,0 +1,25 @@
+[
+  {
+    "display": "About",
+    "sub": [
+      {
+        "display": "首页",
+        "link": "./"
+      },
+      {
+        "display": "博客",
+        "link": "https://blog.gugumur.dev/"
+      },
+      {
+        "display": "关于",
+        "link": "./about.html"
+      }
+    ]
+  },
+  {
+    "display": "Sites",
+    "title": "Channels",
+    "sub": [
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#04050d">
+  <meta name="description" content="GuGuMur">
+  <title>GuGuMur</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="page page--home">
+
+  <div class="sky" aria-hidden="true">
+    <div class="sky__band"></div>
+    <div class="nebula nebula--violet"></div>
+    <div class="nebula nebula--cyan"></div>
+    <div class="nebula nebula--rose"></div>
+  </div>
+
+  <main class="stage" aria-label="流星雨">
+    <canvas id="cosmos-canvas" class="cosmos-canvas" aria-hidden="true"></canvas>
+  </main>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html" aria-label="GuGuMur">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <defs>
+              <radialGradient id="brandStar" cx="35%" cy="30%" r="70%">
+                <stop offset="0" stop-color="#ffffff"/>
+                <stop offset="0.45" stop-color="#b6efff"/>
+                <stop offset="1" stop-color="#5b7cff"/>
+              </radialGradient>
+              <linearGradient id="brandTail" x1="24" y1="8" x2="6" y2="26" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#a8efff" stop-opacity=".95"/>
+                <stop offset=".55" stop-color="#6c8dff" stop-opacity=".42"/>
+                <stop offset="1" stop-color="#6c8dff" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M23.2 11.2 7.4 27" stroke="url(#brandTail)" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M25.4 14.6 14.8 25.2" stroke="url(#brandTail)" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+            <circle cx="23.4" cy="8.6" r="3.4" fill="url(#brandStar)"/>
+            <circle cx="23.4" cy="8.6" r="5.9" fill="url(#brandStar)" opacity=".16"/>
+            <circle cx="29.2" cy="4.4" r=".9" fill="#d9f6ff" opacity=".9"/>
+            <circle cx="8.2" cy="26.2" r=".8" fill="#8fd8ff" opacity=".6"/>
+          </svg>
+        </span>
+        <span class="brand__name">GuGuMur</span>
+      </a>
+
+      <nav class="nav" aria-label="主导航">
+        <button class="nav__toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__list" id="site-nav"></ul>
+      </nav>
+
+      <div class="socials" id="site-socials"></div>
+    </div>
+  </header>
+
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/cosmos.js" defer></script>
+</body>
+</html>
